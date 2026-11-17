@@ -24,9 +24,16 @@ cp config/paper_settings.json "$NQ_EDGE_DATA/paper_settings.json"
 # 1. The scan: settles open trades, looks for new setups, updates the market read.
 "$PY" scan.py || echo "scan reported a problem (details are in data/run_log.txt)"
 
-# 2. The twice-a-day gamma snapshot, during US market hours (New York time).
-if [ "$("$PY" ci/snapshot_due.py)" = "yes" ]; then
+# 2. The gamma snapshot: twice a day during US market hours (New York time), or when asked for by hand.
+if [ "${NQ_ACTION:-scan}" = "snapshot" ] || [ "$("$PY" ci/snapshot_due.py)" = "yes" ]; then
   "$PY" logger.py || echo "snapshot reported a problem (details are in data/run_log.txt)"
+  "$PY" scan.py || true      # scan again so the market read uses the new levels
+fi
+
+# 2b. When asked for by hand: redo the "do the levels matter" and experiments numbers right now.
+if [ "${NQ_ACTION:-scan}" = "refresh-all" ]; then
+  "$PY" -c "import reactions, experiments; reactions.run(); experiments.run()" \
+    || echo "refresh reported a problem (details are in data/run_log.txt)"
 fi
 
 # 3. The numbers the hosted page reads.

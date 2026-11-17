@@ -7,7 +7,16 @@ on:
     #   13:00-21:59 covers the US day session in both summer and winter time
     # The scan itself only trades inside the real session windows, so extra runs do nothing.
     - cron: "*/5 0-7,13-21 * * 1-5"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "scan = scan and market read. snapshot = also take a gamma snapshot. refresh-all = also redo the levels and experiments numbers."
+        type: choice
+        default: scan
+        options:
+          - scan
+          - snapshot
+          - refresh-all
 
 permissions:
   contents: write
@@ -31,4 +40,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NQ_ACTION: ${{ inputs.action }}
         run: bash ci/run.sh

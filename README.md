@@ -8,6 +8,13 @@ Gamma levels from the QQQ options chain, mapped to NQ, plus an orderflow proxy a
 - Each run loads the saved data from the `data` branch, scans, takes the twice-a-day gamma snapshot when due, and saves the data again. The `data` branch is replaced by one new commit every run, so the repo does not grow.
 - `docs/index.html` is a read-only copy of the dashboard (GitHub Pages, from the `main` branch, `/docs` folder). It loads `state.json` from the `data` branch.
 
+## The buttons on the hosted page
+
+GitHub Pages is a static page and cannot run Python, so the buttons open the right GitHub page instead:
+
+- Scan now, Take snapshot and the two Update buttons open "Run workflow". Pick `scan`, `snapshot` or `refresh-all`, then press the green button. The page refreshes about a minute later.
+- Trade rules opens `config/paper_settings.json` for editing. Phone alerts opens the Actions secrets page.
+
 ## Changing the trade rules
 
 Edit `config/paper_settings.json` on the `main` branch (the pencil icon on GitHub). The next scan uses the new rules. Open trades keep their old stop and target.
