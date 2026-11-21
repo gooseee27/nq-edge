@@ -1,0 +1,13 @@
+{
+  "stop_pts": 25.0,
+  "target_pts": 50.0,
+  "min_score": 2,
+  "max_trades_per_day": 3,
+  "cooldown_min": 45,
+  "slippage_pts": 0.5,
+  "point_value": 20.0,
+  "contracts": 1,
+  "first_entry_et": "09:45",
+  "last_entry_et": "15:30",
+  "flat_et": "15:55"
+}
