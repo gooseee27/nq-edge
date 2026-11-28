@@ -1,0 +1,747 @@
+[2026-10-22 12:36:11] OK (dashboard) Logged snapshot | NQ 29123.25 | flip 29757.6 | setups: 0
+[2026-10-23 11:13:40] OK Logged snapshot | NQ 29179.75 | flip 29336.4 | setups: 1
+[2026-10-23 11:13:40] PAPER Took today's gamma snapshot.
+[2026-10-23 14:04:24] OK Logged snapshot | NQ 29165.25 | flip 29339.3 | setups: 2
+[2026-10-24 18:59:11] OK (dashboard) Logged snapshot | NQ 29117.75 | flip 30077.8 | setups: 0
+[2026-10-25 18:20:00] OK (dashboard) Logged snapshot | NQ 29064.25 | flip 30021.8 | setups: 0
+[2026-10-26 10:42:04] PAPER Took today's gamma snapshot.
+[2026-10-26 10:42:04] OK Logged snapshot | NQ 29486.0 | flip 29573.3 | setups: 1
+[2026-10-26 11:56:25] PAPER Paper short opened at 29504.5 (stop 29530.0, target 29455.0) off gex strike 5
+[2026-10-26 13:28:31] PAPER Paper short closed (target): +49.5 pts
+[2026-10-26 13:28:33] OK Logged snapshot | NQ 29462.0 | flip 29593.7 | setups: 2
+[2026-10-26 15:10:38] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 306, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-27 11:56:55] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-10-27 11:56:55] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 348, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-27 12:01:51] PAPER Took today's gamma snapshot.
+[2026-10-27 12:11:42] OK (dashboard) Logged snapshot | NQ 29821.75 | flip 29805.9 | setups: 2
+[2026-10-27 14:10:18] OK Logged snapshot | NQ 29803.0 | flip 29791.2 | setups: 1
+[2026-10-28 10:21:55] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-10-28 10:21:55] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 348, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-28 10:26:57] PAPER Took today's gamma snapshot.
+[2026-10-28 10:26:57] PAPER Took today's gamma snapshot.
+[2026-10-28 13:17:12] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 352, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 331, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-28 13:17:14] OK Logged snapshot | NQ 29981.75 | flip 29920.9 | setups: 1
+[2026-10-28 13:41:55] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-28 13:41:55] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-28 14:06:55] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-28 14:16:54] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-28 14:21:54] MARKET READ FAILED PermissionError(13, 'Permission denied')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 366, in write_live
+    with open(tmp, "w", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp'
+
+[2026-10-28 14:36:55] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-29 11:54:07] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-10-29 11:54:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-29 11:54:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-10-29 11:56:21] PAPER (dashboard) Took today's gamma snapshot.
+[2026-10-29 12:24:18] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-29 12:28:57] PAPER Paper short opened at 29469.5 (stop 29495.0, target 29420.0) off gex strike 5 (US day session, strict rules, bounce); Paper short opened at 29469.5 (stop 29495.0, target 29420.0) off call wall (US day session, loose rules, bounce)
+[2026-10-29 12:30:03] OK Logged snapshot | NQ 29464.75 | flip 29803.3 | setups: 1
+[2026-10-29 12:40:02] PAPER Paper short closed (stop): -26.0 pts; Paper short closed (stop): -26.0 pts; paper_trades.csv is open in another program (Excel?). Close it so trades can be saved.
+[2026-10-29 12:40:02] PAPER Paper short closed (stop): -26.0 pts; Paper short closed (stop): -26.0 pts
+[2026-10-29 14:03:57] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-29 14:13:57] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-29 14:33:49] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-10-30 09:29:49] PAPER (dashboard) Took today's gamma snapshot.
+[2026-10-30 09:29:51] OK Logged snapshot | NQ 28606.25 | flip 29571.8 | setups: 0
+[2026-10-30 09:29:52] PAPER Took today's gamma snapshot.
+[2026-11-02 09:35:48] OK Logged snapshot | NQ 28675.0 | flip 29096.8 | setups: 1
+[2026-11-02 09:35:48] PAPER Took today's gamma snapshot.; Paper short opened at 28674.0 (stop 28699.5, target 28624.5) off call wall (US day session, loose rules, bounce)
+[2026-11-02 11:15:19] PAPER Paper short closed (target): +49.5 pts
+[2026-11-02 12:05:35] OK (dashboard) Logged snapshot | NQ 28481.0 | flip 28663.0 | setups: 2
+[2026-11-02 13:25:10] OK Logged snapshot | NQ 28261.75 | flip 28882.1 | setups: 1
+[2026-11-02 13:30:44] PAPER Paper short opened at 28310.25 (stop 28335.75, target 28260.75) off call wall (US day session, loose rules, bounce)
+[2026-11-02 13:45:45] PAPER Paper short closed (target): +49.5 pts
+[2026-11-02 17:43:32] FAILED (dashboard) ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 575, in do_POST
+    return self._json({"ok": True, "message": msg})
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 535, in _json
+    self._send(code, json.dumps(obj, default=str))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 532, in _send
+    self.wfile.write(data)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-11-02 17:43:39] FAILED (dashboard) IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 574, in do_POST
+    msg = func(body if isinstance(body, dict) else {})
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 402, in act_snapshot
+    row, msg = logger.run_snapshot(demo=False)
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-11-02 18:26:01] PAPER Paper long opened at 28235.5 (stop 28219.5, target 28264.5) off gex strike 4 (Asia session, loose rules, bounce)
+[2026-11-02 22:19:01] PAPER Paper long closed (stop): -17.0 pts
+[2026-11-02 23:30:52] PAPER Paper long opened at 28071.75 (stop 28055.75, target 28100.75) off put wall (Asia session, loose rules, bounce)
+[2026-11-03 08:07:18] OK Logged snapshot | NQ 28281.75 | flip 28822.6 | setups: 1
+[2026-11-03 08:07:18] PAPER Paper long closed (target): +29.0 pts; Took today's gamma snapshot.; Paper long opened at 28282.25 (stop 28256.75, target 28331.75) off gex strike 3 (US day session, strict rules, bounce)
+[2026-11-03 11:57:56] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 29, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-03 12:02:05] PAPER Paper long closed (target): +49.5 pts
+[2026-11-03 12:34:04] OK Logged snapshot | NQ 28339.25 | flip 28717.7 | setups: 1
+[2026-11-04 09:37:04] DASHBOARD STATE FAILED ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 560, in do_GET
+    return self._json(build_state())
+           ~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 542, in _json
+    self._send(code, json.dumps(obj, default=str))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\nq_dashboard.py", line 539, in _send
+    self.wfile.write(data)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+[2026-11-04 09:37:16] PAPER (dashboard) Took today's gamma snapshot.
+[2026-11-04 09:48:32] OK Logged snapshot | NQ 28578.75 | flip 28730.0 | setups: 1
+[2026-11-04 10:33:27] PAPER Paper short opened at 28728.5 (stop 28754.0, target 28679.0) off gamma flip (US day session, strict rules, retest)
+[2026-11-04 11:19:12] PAPER Paper short closed (stop): -26.0 pts; Paper short opened at 28745.0 (stop 28770.5, target 28695.5) off gamma flip (US day session, strict rules, bounce); Paper short opened at 28745.0 (stop 28770.5, target 28695.5) off call wall (US day session, loose rules, bounce)
+[2026-11-04 11:33:27] PAPER Paper short closed (target): +49.5 pts; Paper short closed (target): +49.5 pts
+[2026-11-04 13:20:48] OK Logged snapshot | NQ 28579.25 | flip 28815.4 | setups: 2
+[2026-11-04 13:33:27] PAPER Paper short opened at 28619.0 (stop 28644.5, target 28569.5) off gex strike 5 (US day session, strict rules, bounce); Paper short opened at 28619.0 (stop 28644.5, target 28569.5) off call wall (US day session, loose rules, bounce)
+[2026-11-04 13:48:27] PAPER Paper short closed (stop): -26.0 pts; Paper short closed (stop): -26.0 pts
+[2026-11-05 10:09:50] OK Logged snapshot | NQ 27157.75 | flip 27931.4 | setups: 1
+[2026-11-05 10:09:51] PAPER Took today's gamma snapshot.
+[2026-11-05 10:13:54] PAPER Paper long opened at 27073.25 (stop 27047.75, target 27122.75) off put wall (US day session, loose rules, bounce)
+[2026-11-05 10:28:54] PAPER Paper long closed (target): +49.5 pts
+[2026-11-05 11:38:53] PAPER Paper short opened at 26919.5 (stop 26945.0, target 26870.0) off gex strike 3 (US day session, strict rules, bounce)
+[2026-11-05 11:53:53] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 30, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-05 11:58:55] PAPER Paper short closed (target): +49.5 pts
+[2026-11-05 12:03:55] PAPER Paper short opened at 26924.5 (stop 26950.0, target 26875.0) off gex strike 3 (US day session, loose rules, bounce)
+[2026-11-05 12:18:53] PAPER Paper short closed (target): +49.5 pts
+[2026-11-05 12:30:04] OK Logged snapshot | NQ 27002.75 | flip 27853.1 | setups: 0
+[2026-11-05 12:33:53] PAPER Paper long opened at 26945.0 (stop 26919.5, target 26994.5) off put wall (US day session, strict rules, retest)
+[2026-11-05 12:41:26] OK (dashboard) Logged snapshot | NQ 26901.75 | flip none | setups: 0
+[2026-11-05 12:48:55] PAPER Paper long closed (stop): -26.0 pts
+[2026-11-05 13:27:12] PAPER Paper short opened at 26903.75 (stop 26929.25, target 26854.25) off call wall (US day session, loose rules, bounce)
+[2026-11-05 13:38:53] PAPER Paper short closed (stop): -26.0 pts
+[2026-11-05 18:25:04] PAPER Paper long opened at 26955.75 (stop 26939.75, target 26984.75) off call wall (Asia session, strict rules, retest)
+[2026-11-05 18:30:04] PAPER Paper long closed (stop): -17.0 pts
+[2026-11-05 18:45:03] PAPER Paper short opened at 26953.25 (stop 26969.25, target 26924.25) off call wall (Asia session, loose rules, bounce)
+[2026-11-05 18:50:03] PAPER Paper short closed (target): +29.0 pts
+[2026-11-05 20:45:05] PAPER Paper short opened at 26985.0 (stop 27001.0, target 26956.0) off call wall (Asia session, loose rules, bounce)
+[2026-11-05 20:55:05] PAPER Paper short closed (target): +29.0 pts
+[2026-11-05 21:30:04] PAPER Paper short opened at 26970.5 (stop 26986.5, target 26941.5) off call wall (Asia session, strict rules, bounce)
+[2026-11-05 21:35:04] PAPER Paper short closed (stop): -17.0 pts; Paper short opened at 26968.0 (stop 26984.0, target 26939.0) off call wall (Asia session, loose rules, bounce)
+[2026-11-05 21:40:04] PAPER Paper short closed (stop): -17.0 pts
+[2026-11-05 22:30:03] PAPER Paper long opened at 26954.75 (stop 26938.75, target 26983.75) off call wall (Asia session, strict rules, retest)
+[2026-11-05 22:35:02] PAPER Paper long closed (stop): -17.0 pts
+[2026-11-06 09:54:23] OK Logged snapshot | NQ 27255.5 | flip 28353.5 | setups: 0
+[2026-11-06 09:54:23] PAPER Took today's gamma snapshot.
+[2026-11-06 09:58:48] PAPER Paper long opened at 27217.25 (stop 27191.75, target 27266.75) off call wall (US day session, strict rules, retest)
+[2026-11-06 10:03:45] PAPER Paper long closed (target): +49.5 pts
+[2026-11-06 10:13:46] PAPER Paper long opened at 27210.75 (stop 27185.25, target 27260.25) off call wall (US day session, loose rules, retest)
+[2026-11-06 10:18:50] PAPER Paper long closed (stop): -26.0 pts
+[2026-11-07 00:12:22] OK Logged snapshot | NQ 27085.25 | flip none | setups: 0
+[2026-11-08 20:08:14] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-08 20:10:03] PAPER Paper long opened at 27256.75 (stop 27240.75, target 27285.75) off call wall (Asia session, strict rules, retest)
+[2026-11-08 20:25:02] PAPER Paper long closed (stop): -17.0 pts; Paper long opened at 27250.25 (stop 27234.25, target 27279.25) off call wall (Asia session, loose rules, retest)
+[2026-11-08 22:42:12] PAPER Paper long closed (stop): -17.0 pts
+[2026-11-09 09:56:16] OK Logged snapshot | NQ 27891.0 | flip 27773.1 | setups: 1
+[2026-11-09 09:56:16] PAPER Took today's gamma snapshot.
+[2026-11-09 10:40:08] PAPER Paper short opened at 27967.75 (stop 27993.25, target 27918.25) off gex strike 5 (US day session, strict rules, bounce)
+[2026-11-09 11:30:09] PAPER Paper short closed (target): +49.5 pts
+[2026-11-09 13:15:53] OK Logged snapshot | NQ 28029.25 | flip 28003.1 | setups: 2
+[2026-11-09 18:25:05] PAPER Paper short opened at 27973.5 (stop 27989.5, target 27944.5) off call wall (Asia session, strict rules, bounce)
+[2026-11-09 18:30:04] PAPER Paper short closed (stop): -17.0 pts; Paper short opened at 28011.75 (stop 28027.75, target 27982.75) off call wall (Asia session, loose rules, bounce)
+[2026-11-09 18:40:05] PAPER Paper short closed (target): +29.0 pts
+[2026-11-09 19:15:03] PAPER Paper short opened at 28002.25 (stop 28018.25, target 27973.25) off call wall (Asia session, loose rules, bounce)
+[2026-11-09 19:20:05] PAPER Paper short closed (stop): -17.0 pts
+[2026-11-10 11:56:57] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-11-10 11:56:57] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-10 12:01:57] PAPER Took today's gamma snapshot.; Paper short opened at 27663.5 (stop 27689.0, target 27614.0) off call wall (US day session, strict rules, bounce)
+[2026-11-10 12:06:52] PAPER Paper short closed (stop): -26.0 pts
+[2026-11-10 12:26:54] PAPER Paper long opened at 27696.75 (stop 27671.25, target 27746.25) off call wall (US day session, loose rules, retest)
+[2026-11-10 12:30:06] OK Logged snapshot | NQ 27719.75 | flip 27981.0 | setups: 1
+[2026-11-10 14:10:48] PAPER Paper long closed (target): +49.5 pts
+[2026-11-12 09:36:36] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-11-12 09:36:36] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-12 09:36:36] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-12 09:36:36] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 17:31:56] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-11-15 17:31:56] FAILED IndexError('single positional indexer is out-of-bounds')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 175, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 123, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 128, in fetch_qqq_chain
+    spot = float(t.history(period="1d")["Close"].iloc[-1])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1207, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1773, in _getitem_axis
+    self._validate_integer(key, axis)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\noahg\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\core\indexing.py", line 1706, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2026-11-15 17:31:56] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:31:56] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:32:00] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 17:33:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:33:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:38:06] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:38:11] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:43:05] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:43:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:48:05] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:48:06] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:53:05] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:53:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:58:05] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 17:58:07] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 18:30:03] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-15 18:33:06] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 18:43:05] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 18:48:06] MARKET READ FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 368, in write_live
+    os.replace(tmp, LIVE)
+    ~~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp' -> 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json'
+
+[2026-11-15 18:48:06] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 19:18:05] MARKET READ FAILED PermissionError(13, 'Permission denied')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 389, in run_now
+    write_live(d)
+    ~~~~~~~~~~^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 366, in write_live
+    with open(tmp, "w", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\noahg\\Downloads\\nqgamma\\data\\live.json.tmp'
+
+[2026-11-15 19:18:05] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 20:58:05] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-15 21:38:06] REACTIONS FAILED PermissionError(13, 'The process cannot access the file because it is being used by another process')
+[2026-11-16 09:44:00] OK Logged snapshot | NQ 27592.25 | flip 28195.5 | setups: 0
+[2026-11-16 09:44:01] PAPER Took today's gamma snapshot.
+[2026-11-16 10:18:19] PAPER Paper short opened at 27513.0 (stop 27538.5, target 27463.5) off gex strike 3 (US day session, strict rules, bounce)
+[2026-11-16 10:33:19] PAPER Paper short closed (target): +49.5 pts
+[2026-11-16 11:11:02] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 385, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-16 13:35:36] OK Logged snapshot | NQ 27260.75 | flip 28237.8 | setups: 1
+[2026-11-17 11:59:53] FAILED RuntimeError('Yahoo returned no QQQ price. This is usually temporary; the next scheduled run tries again.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 177, in main
+    _, msg = run_snapshot(demo="--demo" in sys.argv)
+             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\logger.py", line 125, in run_snapshot
+    chain, spot = gamma.fetch_qqq_chain()
+                  ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\noahg\Downloads\nqgamma\gamma.py", line 131, in fetch_qqq_chain
+    raise RuntimeError("Yahoo returned no QQQ price. This is usually temporary; the next scheduled run tries again.")
+RuntimeError: Yahoo returned no QQQ price. This is usually temporary; the next scheduled run tries again.
+
+[2026-11-17 11:59:53] MARKET READ FAILED RuntimeError('No price data came back.')
+Traceback (most recent call last):
+  File "C:\Users\noahg\Downloads\nqgamma\scan.py", line 31, in main
+    analyzer.run_now(bars)  # after the scan, so it knows about any trade just opened
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\noahg\Downloads\nqgamma\analyzer.py", line 387, in run_now
+    raise RuntimeError("No price data came back.")
+RuntimeError: No price data came back.
+
+[2026-11-17 12:04:30] PAPER Took today's gamma snapshot.; Paper short opened at 26957.75 (stop 26983.25, target 26908.25) off gex strike 2 (US day session, loose rules, bounce)
+[2026-11-18 01:38:26] PAPER Paper short closed (stop): -26.0 pts
+[2026-11-20 18:33:56] PAPER Took today's gamma snapshot.; Paper short opened at 25641.5 (stop 25667.0, target 25592.0) off gex strike 2 (US day session, strict rules, bounce)
+[2026-11-20 20:58:38] PAPER Paper short closed (target): +49.5 pts
+[2026-11-23 18:53:58] PAPER Took today's gamma snapshot.; Paper short opened at 26781.25 (stop 26806.75, target 26731.75) off call wall (US day session, loose rules, bounce)
+[2026-11-24 04:13:09] PAPER Paper short closed (target): +49.5 pts
+[2026-11-24 14:58:11] PAPER Took today's gamma snapshot.; Paper long opened at 26428.5 (stop 26403.0, target 26478.0) off gex strike 4 (US day session, loose rules, bounce)
+[2026-11-24 23:50:29] PAPER Paper long closed (stop): -26.0 pts
+[2026-11-25 18:22:48] PAPER Took today's gamma snapshot.
+[2026-11-27 17:40:26] PAPER Took today's gamma snapshot.

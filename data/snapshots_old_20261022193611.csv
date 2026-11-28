@@ -1,0 +1,2 @@
+ts_utc,nq_price,qqq_spot,ratio,net_gex_bn,call_wall,put_wall,gamma_flip,top_strikes,delta_z,cvd_change,divergence,absorption,vol_ratio,range_ratio,setups
+2026-10-13T16:38:54+00:00,30766.0,743.41,41.3852,-2.277,31038.9,30625.1,,"[30625.1, 31452.8, 30707.9, 30832.0, 31038.9]",0.62,2363.1,,False,0.53,0.87,[]
